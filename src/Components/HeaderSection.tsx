@@ -37,9 +37,9 @@ export default function Header({ navLinks }: { navLinks: NavLinkType[] }) {
                         <button className="bg-green-800 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">
                             Contact Me <TbHandClick className="inline-block ml-1 mb-0.5 size-5" />
                         </button>
-                        <Link href={'/linkin'}><FaLinkedin className="size-10" />
+                        <Link href={'https://www.linkedin.com/in/shubhanshu-saadhiyaaan/'} target="_blank"><FaLinkedin className="size-10" />
                         </Link>
-                        <Link href={'/github'}><FaGithub className="size-10" />
+                        <Link href={'https://github.com/CodeshShubh'} target="_blank"><FaGithub className="size-10" />
                         </Link>
                     </div>
                 </div>

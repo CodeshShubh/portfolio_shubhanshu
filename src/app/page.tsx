@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { techIcons, navLinks, projectDetails } from './_lib/Links'
-import Card from "@/Components/Card";
 import Header from "@/Components/HeaderSection";
 import About from "@/Components/AboutSection";
 import Skill from "@/Components/SkillSection";
@@ -32,8 +30,12 @@ export default function Page() {
       <hr className="text-white font-light mt-20 mb-10 w-2/3 mx-auto" />
 
       {/* projects section */}
-      <section className="projects p-5 m-1 text-black">
+      <section id="projects" className="projects p-5 m-1 text-black">
         <Projects projectDetails={projectDetails} />
+      </section>
+
+      <section>
+        
       </section>
 
     </section>
