@@ -5,6 +5,36 @@ import { TbHandClick } from "react-icons/tb";
 
 
 export default function Page() {
+  // these links form -> https://devicon.dev/
+  const techIcons = [
+    { name: "JavaScript", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+    { name: "TypeScript", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+    { name: "EJS", link: "/ejs.svg" },
+    { name: "React.js", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+    { name: "Next.js", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+    { name: "PWA", link: "https://raw.githubusercontent.com/CodeshShubh/icons/main/pwa.png" },
+    { name: "Redux Toolkit", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" },
+    { name: "Manifest.json", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" },
+    { name: "Node.js", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+    { name: "Express.js", link: "/express.png" },
+    { name: "Socketio", link: "/Socket.png" },
+    { name: "MongoDB", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+    { name: "Firebase", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
+    { name: "MySql", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+    { name: "Mongoose", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg" },
+    { name: "Razorpay", link: "/razorpay.png" },
+    { name: "HTML5", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" },
+    { name: "CSS3", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
+    { name: "TailwindCSS", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+    { name: "StyledComponents", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/styledcomponents/styledcomponents-original.svg" },
+    { name: "Bootstrap", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" },
+    { name: "Postman", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+    { name: "Vercel", link: "/vercel.png" },
+    { name: "Netlify", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" },
+    { name: "Github", link: "/github.png" },
+  ]
+
+
   return (
     <section className="">
       <div className=" flex justify-between items-center p-6 m-1 font-extrabold">
@@ -58,7 +88,7 @@ export default function Page() {
 
         <div className=" text-center p-3  w-[60%] mx-auto">
           <h1 className=" font-bold text-3xl text-green-800 ">About Me</h1>
-          <p className="font-light text-sm leading-tight mb-6 bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">Get to know me</p>
+          <p className="font-light text-sm leading-tight mb-6 bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">Get to know me:</p>
           <div className="leading-relaxed space-y-5">
             <p>
               I’m an Experienced Full Stack Web Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js)
@@ -92,12 +122,37 @@ export default function Page() {
       {/* skills section */}
       <hr className="text-white font-light mt-20 mb-10 w-2/3 mx-auto" />
 
-
       <section id='skills'>
 
-        
-          
+        <div className="text-center">
+
+          <h1 className=" font-bold text-3xl text-green-800 ">Skills</h1>
+          <p className="font-light text-sm leading-tight mb-6 bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">The skills, tools and technologies i am good at:</p>
+
+        </div>
+
+        <div className=" grid grid-cols-5 justify-items-center p-5 m-1  text-center">
+          {
+            techIcons.map((itm, i) => {
+              return (
+                <div key={i} className=" flex flex-col justify-center items-center gap-2 w-28 h-28">
+                  <Image src={itm.link} alt={itm.name} width={50} height={50} className="object-contain hover:scale-120 transition duration-700 ease-out" />
+                  <span className="text-xs bg-gradient-to-b form-green-800 to-blue-500 bg-clip-text text-transparent">{itm.name}</span>
+                </div>
+              )
+            })
+          }
+        </div>
+
       </section>
+
+      {/* projects section */}
+      <hr className="text-white font-light mt-20 mb-10 w-2/3 mx-auto" />
+
+      <section>
+
+      </section>
+
 
 
     </section>
