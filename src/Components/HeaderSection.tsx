@@ -23,7 +23,9 @@ export default function Header({ navLinks }: { navLinks: NavLinkType[] }) {
                             )
                         })
                     }
-                    <button className="w-30 ml-12 bg-green-800 hover:bg-green-600 duration-1000 font-bold  rounded-2xl shadow-2xl text-xs md:text-sm cursor-pointer px-1 md:px-3 py-2 md:py-1.5 text-center ">Download CV</button>
+                    <button className="w-30 ml-12 bg-green-800 hover:bg-green-600 duration-1000 font-bold  rounded-2xl shadow-2xl text-xs md:text-sm cursor-pointer px-1 md:px-3 py-2 md:py-1.5 text-center ">
+                        <Link href={'/Shubhanshu Saadhiyaan (Resume).pdf'} download={"Shubhanshu-Resume.pdf"} >Download CV</Link>
+                        </button>
                 </div>
             </div>
 
@@ -39,7 +41,7 @@ export default function Header({ navLinks }: { navLinks: NavLinkType[] }) {
                         PWA Builder and the Google Play Console.</p>
                     <div className=" flex justify-center items-center gap-5 mb-2 md:mb-0   md:w-1/2 mx-auto">
                         <button className= "w-30 bg-green-800 hover:bg-green-600 duration-1000 font-bold rounded-2xl shadow-2xl text-xs md:text-sm cursor-pointer px-3 py-1.5 text-center ">
-                            Contact Me
+                            <Link href={"#contact"}>Contact Me</Link>
                         </button>
                         <Link href={'https://www.linkedin.com/in/shubhanshu-saadhiyaaan/'} className="hover:scale-110 duration-1000" target="_blank"><FaLinkedin className="size-10" />
                         </Link>

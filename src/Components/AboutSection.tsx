@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
     return (
          <div className=" text-center p-3 w-[80%]  md:w-[60%] mx-auto">
@@ -26,7 +28,9 @@ export default function About() {
                     </p>
                   </div>
         
-                  <button className="mt-10 bg-green-800 hover:bg-green-600 duration-1000 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">Download CV</button>
+                  <button className="mt-10 bg-green-800 hover:bg-green-600 duration-1000 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">
+                    <Link href={"/Shubhanshu Saadhiyaan (Resume).pdf" } download={"Shubhanshu-Resume.pdf"}>Download CV</Link>
+                    </button>
                 </div>
     );
 }
