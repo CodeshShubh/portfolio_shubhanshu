@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Contact() {
     return (
         <div className="text-center">
-            <h1 className=" font-bold text-3xl text-green-800 ">Let's Connect</h1>
+            <h1 className=" font-bold text-3xl text-green-800 ">{"Let's Connect"}</h1>
             <p className="font-light text-sm leading-tight mb-6 bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">Get to know me:</p>
             <div className="flex flex-col justify-center 
             items-center 
@@ -42,7 +42,7 @@ export default function Contact() {
             </div>
 
          <div className="mt-18 flex flex-col justify-center items-center gap-2">
-             <p className="w-130 text-center bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">What's next? Feel free to reach out to me if you are looking for a devloper, have a query, or simply want to connect</p>
+             <p className="w-130 text-center bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">{"What's next?"} Feel free to reach out to me if you are looking for a devloper, have a query, or simply want to connect</p>
 
              <Link href={'mailto:shubhanshu.saadhiyaan@gmail.com'} className="flex justify-center items-center gap-3 ">
              <MdOutlineMailOutline className="size-10 bg-gradient-to-b from-green-800 to-blue-500 rounded-xl p-0.5" />
