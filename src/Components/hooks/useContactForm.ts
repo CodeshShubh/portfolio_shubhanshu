@@ -21,14 +21,14 @@ export function useContactForm() {
             })
 
             if (res.ok) {
-                toast.success('✅ Message sent successfully!')
+                toast.success('Message sent successfully!')
                 form.reset()
             } else {
-                toast.error('❌ Something went wrong, try again.')
+                toast.error('Something went wrong, try again.')
             }
 
         } catch (err) {
-            toast.error('⚠️ Network error, please retry.')
+            toast.error('Network error, please retry.')
         } finally {
             setLoading(false)
         }
