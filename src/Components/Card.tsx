@@ -11,7 +11,7 @@ export default function Card({ Details }: { Details: ProjectDetailsType }) {
             <div className=" flex gap-3 justify-center items-center p-5 m-1 bg-gradient-to-b from-green-800 to-blue-500 rounded-2xl">
                 <div className=" rounded flex justify-center">
                     <Image src={Details.href} alt={Details.name} width={400} height={500}
-                        className="rounded-2xl" />
+                        className="rounded-2xl hover:scale-110 duration-1000" />
                 </div>
 
                 <div className=" w-1/2 text-center flex flex-col gap-2 p-1">

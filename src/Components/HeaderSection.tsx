@@ -9,7 +9,10 @@ export default function Header({ navLinks }: { navLinks: NavLinkType[] }) {
         <div>
             <div className=" flex justify-between items-center p-6 m-1 font-extrabold">
                 <div className=" ">
-                    <h1>SHUBHANSHU SAADHIYAAN</h1>
+                    <h1 className="font-extrabold
+  bg-gradient-to-r from-green-800 via-blue-500 to-purple-600 
+  bg-clip-text text-transparent 
+  animate-gradient ">SHUBHANSHU SAADHIYAAN</h1>
                 </div>
                 <div className=" flex justify-center items-center gap-3">
                     {
@@ -19,7 +22,7 @@ export default function Header({ navLinks }: { navLinks: NavLinkType[] }) {
                             )
                         })
                     }
-                    <button className="ml-12 bg-green-800 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">Download CV</button>
+                    <button className="ml-12 bg-green-800 hover:bg-green-600 duration-1000 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">Download CV</button>
                 </div>
             </div>
 
@@ -34,12 +37,12 @@ export default function Header({ navLinks }: { navLinks: NavLinkType[] }) {
                         high-performance applications and deploying native-like apps via
                         PWA Builder and the Google Play Console.</p>
                     <div className="flex justify-center items-center gap-5   w-1/2 mx-auto">
-                        <button className="bg-green-800 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">
+                        <button className="bg-green-800 hover:bg-green-600 duration-1000 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">
                             Contact Me <TbHandClick className="inline-block ml-1 mb-0.5 size-5" />
                         </button>
-                        <Link href={'https://www.linkedin.com/in/shubhanshu-saadhiyaaan/'} target="_blank"><FaLinkedin className="size-10" />
+                        <Link href={'https://www.linkedin.com/in/shubhanshu-saadhiyaaan/'} className="hover:scale-110 duration-1000" target="_blank"><FaLinkedin className="size-10" />
                         </Link>
-                        <Link href={'https://github.com/CodeshShubh'} target="_blank"><FaGithub className="size-10" />
+                        <Link href={'https://github.com/CodeshShubh'} className="hover:scale-110 duration-1000" target="_blank"><FaGithub className="size-10" />
                         </Link>
                     </div>
                 </div>

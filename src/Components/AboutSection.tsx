@@ -26,7 +26,7 @@ export default function About() {
                     </p>
                   </div>
         
-                  <button className="mt-10 bg-green-800 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">Download CV</button>
+                  <button className="mt-10 bg-green-800 hover:bg-green-600 duration-1000 font-bold rounded-2xl shadow-2xl text-sm cursor-pointer px-3 py-1.5 text-center ">Download CV</button>
                 </div>
     );
 }

@@ -16,7 +16,7 @@ export default function Skill({techIcons}:{techIcons:TechIconType[]}) {
                     techIcons.map((itm, i) => {
                         return (
                             <div key={i} className=" flex flex-col justify-center items-center gap-2 w-28 h-28">
-                                <Image src={itm.link} alt={itm.name} width={50} height={50} className="object-contain hover:scale-120 transition duration-700 ease-out" />
+                                <Image src={itm.link} alt={itm.name} width={50} height={50} className="object-contain hover:scale-120 transition duration-1000 ease-out" />
                                 <span className="text-xs bg-gradient-to-b form-green-800 to-blue-500 bg-clip-text text-transparent">{itm.name}</span>
                             </div>
                         )

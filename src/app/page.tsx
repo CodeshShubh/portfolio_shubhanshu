@@ -3,6 +3,8 @@ import Header from "@/Components/HeaderSection";
 import About from "@/Components/AboutSection";
 import Skill from "@/Components/SkillSection";
 import Projects from "@/Components/ProjectsSection";
+import Contact from '@/Components/Contact';
+import Footer from '@/Components/FooterSection';
 
 
 
@@ -34,10 +36,11 @@ export default function Page() {
         <Projects projectDetails={projectDetails} />
       </section>
 
-      <section>
-        
+      <section id='contact'>
+         <Contact/>
       </section>
 
+      <Footer/>
     </section>
   );
 }
