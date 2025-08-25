@@ -17,8 +17,10 @@ export default function Contact() {
             items-center 
             gap-5
             [&>*]:rounded
-            [&>*]:w-2/3
-            w-[50%]
+            md:[&>*]:w-2/3
+            [&>*]:w-[90%]
+            w-[90%]
+            md:w-[50%]
             mx-auto
             [&>input]:h-12
             [&>*]:px-4
@@ -42,7 +44,7 @@ export default function Contact() {
             </div>
 
          <div className="mt-18 flex flex-col justify-center items-center gap-2">
-             <p className="w-130 text-center bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">{"What's next?"} Feel free to reach out to me if you are looking for a devloper, have a query, or simply want to connect</p>
+             <p className="w-[80%] md:w-130 text-center bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">{"What's next?"} Feel free to reach out to me if you are looking for a devloper, have a query, or simply want to connect</p>
 
              <Link href={'mailto:shubhanshu.saadhiyaan@gmail.com'} className="flex justify-center items-center gap-3 ">
              <MdOutlineMailOutline className="size-10 bg-gradient-to-b from-green-800 to-blue-500 rounded-xl p-0.5" />
@@ -54,7 +56,7 @@ export default function Contact() {
               <p className="bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition duration-1000">+91-70608-21855</p>
              <BsCopy />
             </Link>
-            <div className="mb-3">
+            <div className="mb-3 mt-3">
                 <p className="bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">You may also find me</p>
                 <div className="flex justify-center items-center gap-2">
                 <Link href={""}><FaXTwitter className="size-6 bg-gradient-to-b from-green-800 to-blue-500 rounded-xl hover:scale-150 transition duration-1000" /></Link>

@@ -1,6 +1,6 @@
 export default function About() {
     return (
-         <div className=" text-center p-3  w-[60%] mx-auto">
+         <div className=" text-center p-3 w-[80%]  md:w-[60%] mx-auto">
                   <h1 className=" font-bold text-3xl text-green-800 ">About Me</h1>
                   <p className="font-light text-sm leading-tight mb-6 bg-gradient-to-b from-green-800 to-blue-500 bg-clip-text text-transparent">Get to know me:</p>
                   <div className="leading-relaxed space-y-5">

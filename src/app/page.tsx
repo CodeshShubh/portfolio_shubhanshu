@@ -32,7 +32,7 @@ export default function Page() {
       <hr className="text-white font-light mt-20 mb-10 w-2/3 mx-auto" />
 
       {/* projects section */}
-      <section id="projects" className="projects p-5 m-1 text-black">
+      <section id="projects" className="projects p-0.5 md:p-5 m-0 md:m-1 text-black">
         <Projects projectDetails={projectDetails} />
       </section>
 
