@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://webdevshubhanshu.netlify.app
+
+# Sitemaps
+Sitemap: https://webdevshubhanshu.netlify.app/sitemap.xml
